@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/icomoon.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>优惠券</title>
+</head>
+
+<body>
+    <img src="./images/toolbar.png" alt="">
+    <div class="view">
+
+        <!-- 全场优惠 -->
+        <div class="box">
+            <!-- 标题 -->
+            <div class="box_title">
+                <span>全场优惠</span>
+                <span>1/1</span>
+
+            </div>
+            <!-- 内容 -->
+            <div class="box_content">
+                <!-- 绿色部分 -->
+                <div class="box_main">
+                    <div class="contnet_text1">
+                        全场满300减10
+                    </div>
+                    <div class="contnet_text2">
+                        双十一特价优惠全场满就减
+                    </div>
+                    <div class="contnet_text3">
+                        <div class="contnet_text3_left">
+                            <span class="icon-time"></span> 14-11-12 20:12 至 14-11-12 23:12
+
+
+                        </div>
+                        <a href="javascript:;">即将开始</a>
+                    </div>
+                </div>
+                <!-- 白色部分 -->
+                <div class="box_tool">
+                    <a href="javascript:;">
+                        <span class="icon-edit"></span> 编辑
+                    </a>
+                    <a href="javascript:;">
+                        <span class="icon-share"></span> 分享
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 优惠券 -->
+        <div class="box coupons">
+            <!-- 标题 -->
+            <div class="box_title">
+                <span>优惠劵</span>
+                <span>2/3</span>
+
+            </div>
+            <!-- 内容 -->
+            <div class="box_content">
+                <!-- 紫色色部分 -->
+                <div class="box_main ">
+                    <div class="contnet_name1">
+                        <span class="rmb">￥ </span>
+                        <span class="price">5</span>
+                        <span class="tip">（满0.00元可用）</span>
+
+                    </div>
+                    <div class="contnet_name2">
+                        已领取/已使用：12/22 发行总数：1230
+                    </div>
+                    <div class="contnet_text3">
+                        <div class="contnet_text3_left">
+                            <span class="icon-time"></span> 14-11-12 至 14-11-12
+
+
+                        </div>
+                        <a href="javascript:;">已领取完</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <!-- 有工具栏 -->
+            <div class="box_content Two_tool">
+                <!-- 紫色色部分 -->
+                <div class="box_main main1">
+                    <div class="contnet_name1">
+                        <span class="rmb">￥ </span>
+                        <span class="price">20</span>
+                        <span class="tip">（满500.00元可用）</span>
+
+                    </div>
+                    <div class="contnet_name2">
+                        已领取/已使用：12/22 发行总数：1230
+                    </div>
+                    <div class="contnet_text3">
+                        <div class="contnet_text3_left">
+                            <span class="icon-time"></span> 14-11-12 至 14-11-12
+
+
+                        </div>
+                        <a href="javascript:;">正在进行</a>
+                    </div>
+                </div>
+                <!-- 白色部分 -->
+                <div class="box_tool">
+                    <a href="javascript:;">
+                        <span class="icon-delete"></span> 作废
+                    </a>
+                    <a href="javascript:;">
+                        <span class="icon-edit"></span> 编辑
+                    </a>
+                    <a href="javascript:;">
+                        <span class="icon-share"></span> 分享
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 添加优惠卷 -->
+        <a href="javascript:;" class="add_box">
+            <span class="icon-add"></span>
+            <p>添加优惠劵</p>
+        </a>
+
+
+        <!-- 底部 -->
+        <footer>
+            <p> "提示：</p>
+            <p>
+                1、买家下单时只可选择其一（全场优惠或优惠券）
+            </p>
+            <p>2、优惠券一旦设置后不可修改"</p>
+
+
+        </footer>
+    </div>
+
+
+
+</body>
+<script>
+    setscreenWidth();
+    window.onresize = function() {
+        setscreenWidth();
+    }
+
+    function setscreenWidth() {
+        /* 获取页面宽度 */
+        var pageWidth = document.querySelector("html").offsetWidth;
+        // 基础值
+        var jcWidth = 100;
+        /* 设计稿值 */
+        var sjWidth = 640;
+        /* 要设置的字体 */
+        var fontsize = jcWidth * pageWidth / sjWidth;
+        document.querySelector("html").style.fontSize = fontsize + "px";
+
+    }
+</script>
+
+</html>
